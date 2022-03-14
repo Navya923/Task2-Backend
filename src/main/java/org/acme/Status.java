@@ -1,0 +1,12 @@
+package org.acme;
+
+public enum Status {
+    NEW,
+    PROCUREMENT_APPROVAL,
+    PROCUREMENT_REJECT,
+    FINANCE_APPROVAL,
+    FINANCE_REJECT,
+    LOGISTICS_APPROVAL,
+    LOGISTICS_REJECT
+}
+

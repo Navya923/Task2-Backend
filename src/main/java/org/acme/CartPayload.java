@@ -3,11 +3,9 @@ package org.acme;
 public class CartPayload {
 
 
-
     private String title;
 
     private int date;
-
 
 
     private int quantity;
@@ -21,9 +19,6 @@ public class CartPayload {
     public void setTitle(String title) {
         this.title = title;
     }
-
-
-
 
 
     public int getQuantity() {
@@ -50,14 +45,6 @@ public class CartPayload {
         this.date = date;
     }
 
-//    @Override
-//    public String toString() {
-//        return "CandidatePayload{" +
-//                "fname='" + fname + '\'' +
-//                ", lname='" + lname + '\'' +
-//                ", age=" + age +
-//                ", experience=" + experience +
-//                '}';
-    }
+}
 
 

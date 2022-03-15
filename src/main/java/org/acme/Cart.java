@@ -26,7 +26,6 @@ import io.quarkus.hibernate.orm.panache.PanacheEntity;
         private Status status;
 
 
-
         public Status getStatus() {
             return status;
         }
@@ -42,7 +41,6 @@ import io.quarkus.hibernate.orm.panache.PanacheEntity;
         public void setTitle(String title) {
             this.title = title;
         }
-
 
 
         public int getQuantity() {
@@ -69,18 +67,6 @@ import io.quarkus.hibernate.orm.panache.PanacheEntity;
             this.date = date;
         }
 
-
-//        @Override
-//        public String toString() {
-//            return "Candidate{" +
-//                    "fname='" + fname + '\'' +
-//                    ", lname='" + lname + '\'' +
-//                    ", age=" + age +
-//                    ", experience=" + experience +
-//                    ", status=" + status +
-//                    ", feedback='" + feedback + '\'' +
-//                    '}';
-//        }
     }
 
 

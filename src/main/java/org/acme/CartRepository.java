@@ -33,15 +33,6 @@ public class CartRepository implements PanacheRepository<Cart> {
     }
 
 
-//    @Transactional
-//    public List<Cart > getAllCarts(List<Status> status) {
-//        TypedQuery<Cart> q =
-//                em.createQuery("select t from Cart t where t.status in (:status)", Cart.class);
-//        q.setParameter("status", status);
-//        return q.getResultList();
-//    }
-
-
     @Transactional
     public void updateStatus(long id, Status status) {
         Cart  cart  = Cart .findById(id);

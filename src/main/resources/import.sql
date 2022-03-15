@@ -1,4 +1,4 @@
-INSERT INTO user(id, firstName,lastName,phone,email,`password`) VALUES (nextval('hibernate_sequence'), 'Navya','Shree','9686107489','Nav@shr.com','1234');
+INSERT INTO user(id, firstName,lastName,phone,email, isAdmin, `password`) VALUES (nextval('hibernate_sequence'), 'Navya','Shree','9686107489','Navyashree@gmail.com', 'true', 'store923');
 
 
 

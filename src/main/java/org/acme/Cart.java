@@ -19,6 +19,10 @@ import io.quarkus.hibernate.orm.panache.PanacheEntity;
         public int price;
 
         @Column
+        public int date;
+
+
+        @Column
         private Status status;
 
 
@@ -55,6 +59,14 @@ import io.quarkus.hibernate.orm.panache.PanacheEntity;
 
         public void setPrice(int price) {
             this.price = price;
+        }
+
+        public int getDate() {
+            return date;
+        }
+
+        public void setDate(int date) {
+            this.date = date;
         }
 
 

@@ -36,7 +36,7 @@ public class UserResource {
 
     @GET
     @Path("/login")
-    public String login(@QueryParam("email") String email, @QueryParam("password") String password) {
+    public User login(@QueryParam("email") String email, @QueryParam("password") String password) {
         System.out.println("Email: " + email);
         System.out.println("Password: " + password);
         User existingUser = User.find("email", email).firstResult();
@@ -44,6 +44,7 @@ public class UserResource {
             throw new WebApplicationException(
                     Response.status(404).entity("No user found or password is incorrect").build());
         }
-        return service.generateUserToken(existingUser.getEmail(), email);
+//        return service.generateUserToken(existingUser.getEmail(), email);
+        return existingUser;
     }
 }

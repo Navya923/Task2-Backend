@@ -24,15 +24,6 @@ public class LogisticsController {
         return carts;
     }
 
-//    @GET
-//    @Path("all_carts")
-//    public List<Cart> GetAllCarts() {
-//        System.out.println("fetching all cart list for logistics");
-//        List<Cart> carts = cartRepository.getAllCarts();
-//        System.out.println(carts);
-//        return carts;
-//    }
-
 
     @POST
     @Path("approve/{id}")

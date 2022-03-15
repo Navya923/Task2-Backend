@@ -6,6 +6,8 @@ public class CartPayload {
 
     private String title;
 
+    private int date;
+
 
 
     private int quantity;
@@ -38,6 +40,14 @@ public class CartPayload {
 
     public void setPrice(int price) {
         this.price = price;
+    }
+
+    public int getDate() {
+        return date;
+    }
+
+    public void setDate(int date) {
+        this.date = date;
     }
 
 //    @Override

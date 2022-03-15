@@ -11,6 +11,7 @@ public class User extends PanacheEntity {
     private String email;
     private String phone;
     private String password;
+    private Boolean isAdmin;
 
     public String getFirstName() {
         return firstName;
@@ -19,6 +20,15 @@ public class User extends PanacheEntity {
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
+
+    public Boolean getisAdmin() {
+        return isAdmin;
+    }
+
+    public void setIsAdmin(Boolean isAdmin) {
+        this.isAdmin = isAdmin;
+    }
+
 
     public String getLastName() {
         return lastName;

@@ -24,14 +24,6 @@ public class FinanceController {
         return carts;
     }
 
-//    @GET
-//    @Path("all_carts")
-//    public List<Cart> GetAllCarts() {
-//        System.out.println("fetching all cart list for finance");
-//        List<Cart> carts = cartRepository.getAllCarts();
-//        System.out.println(carts);
-//        return carts;
-//    }
 
 
     @POST

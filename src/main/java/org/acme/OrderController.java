@@ -50,7 +50,7 @@ public class OrderController {
     @Path("approved_carts")
     public List<Cart> GetApprovedCarts() {
         System.out.println("fetching approved cart list for order");
-        List<Cart> carts = cartRepository.getCarts(Arrays.asList(Status.PROCUREMENT_APPROVAL, Status.FINANCE_APPROVAL, Status.LOGISTICS_REJECT));
+        List<Cart> carts = cartRepository.getCarts(Arrays.asList(Status.PROCUREMENT_APPROVAL, Status.FINANCE_APPROVAL, Status.LOGISTICS_APPROVAL, Status.LOGISTICS_REJECT));
         System.out.println(carts);
         return carts;
     }
